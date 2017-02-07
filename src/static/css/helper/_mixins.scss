@@ -1,0 +1,58 @@
+/*
+ * _mixins.scss
+ * 
+ * @author 请叫我蛋蛋哥 <76573917@qq.com>
+ * @created 2016-12-29 13:20
+ */
+
+// ## 清除浮动
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// ## 尺寸(长度，大小。。。。) 污污污污
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+// ## 添加滚动效果
+@mixin scrollable() {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// ## 文本溢出省略
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// ## 多行文本溢出显示省略号
+@mixin line-clamp($lines: 2, $line-height: 1.3em) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines; // 显示行数
+  overflow: hidden;
+  line-height: $line-height;
+  max-height: $line-height * $lines;
+}
+
+// ## 禁用外观
+@mixin no-appearance {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

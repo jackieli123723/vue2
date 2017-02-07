@@ -1,0 +1,77 @@
+/*
+ * base.scss
+ * 
+ * @author 请叫我蛋蛋哥 <76573917@qq.com>
+ * @created 2016-12-29 14:04
+ */
+
+// ## env
+@import 'env';
+// ## normalize
+@import 'normalize.css/normalize.css';
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-size: $base-font-size;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-touch-callout: none;
+  background: linear-gradient(to bottom,transparent,transparent);
+}
+
+body {
+  background: $body-background;
+  color: $body-font-color;
+  padding: 0;
+  margin: 0;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-style: $body-font-style;
+  line-height: 1.6;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+label {
+  -webkit-appearance: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  color: $global-primary;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}

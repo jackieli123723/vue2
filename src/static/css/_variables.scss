@@ -1,0 +1,60 @@
+/*!
+ * variables.scss
+ * 一些常用的配置
+ * @author 请叫我蛋蛋哥 <76573917@qq.com>
+ * @created 2016-03-30 15:12
+ */
+
+
+// ## 颜色
+$black: #000 !default;
+$white: #fff !default;
+
+$global-primary: #0e90d2 !default;
+$global-secondary: lighten($global-primary, 15%) !default;
+$global-success: #5eb95e !default;
+$global-warning: #F37B1D !default;
+$global-alert: #dd514c !default;
+
+$gray-darker: lighten($black, 13.5%) !default; // #222
+$gray-dark: lighten($black, 20%) !default;   // #333
+$gray: lighten($black, 33.5%) !default; // #555
+$gray-light: lighten($black, 53.3%) !default; // #888
+$gray-lighter: lighten($black, 93.5%) !default; // #eee
+
+$light-alt: #e6e6e6 !default;
+$light-base: $gray-dark !default;
+
+$dark-alt: #393939 !default;
+$dark-base: $white !default;
+
+
+// ## 字体
+$rem-base: 16px;
+$base-font-size: 100% !default;
+$base-line-height: 1.5 !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+
+$font-family-sans-serif: /* 1 */ -apple-system, BlinkMacSystemFont,
+  /* 2 */ "PingFang SC", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "wenquanyi micro hei",
+  /* 3 */ "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, SimSun, serif !default; // FangSong, STFangSong
+$font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+
+// ## 层级
+$z-index-layout-top: 20 !default;
+$z-index-layout-bottom: $z-index-layout-top - 10 !default;
+// 组件
+$z-index-base: 1000 !default;
+$z-index-modal: $z-index-base + 10 !default;
+$z-index-notification: $z-index-base + 100 !default;
+
+
+// ## Base
+$body-background: #f4f4f4 !default;
+$body-font-color: $gray-dark !default;
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: $font-weight-normal !default;
+$body-font-style: normal !default;

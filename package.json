@@ -1,0 +1,50 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "shop for vue",
+  "author": "hzh1990 <76573917@qq.com>",
+  "private": true,
+  "scripts": {
+    "clean": "fis3 server stop && rimraf ./.tmp",
+    "dev": "mkdirp ./.tmp && fis3 server restart --www .tmp --root .tmp --port 8081 --no-browse --type node && fis3 release -wL",
+    "build": "rimraf ./.output && fis3 release prod --dest ./.output && cd ./.output && http-server -p8082 -c-1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "es6-promise": "^4.0.5",
+    "family.scss": "^1.0.5",
+    "fis-mod": "^1.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "normalize.css": "^5.0.0",
+    "vue": "^2.0.7",
+    "vue-resource": "^1.0.3",
+    "vue-router": "^2.0.2",
+    "vue-touch": "git://github.com/vuejs/vue-touch.git#next",
+    "vuex": "^2.0.0",
+    "vuex-router-sync": "^3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "clean-css": "^3.4.21",
+    "deasync": "^0.1.7",
+    "extend": "^3.0.0",
+    "html-minifier": "^3.1.1",
+    "lodash": "^4.17.2",
+    "lowdb": "^0.14.0",
+    "mkdirp": "^0.5.1",
+    "mockjs": "^1.0.1-beta2",
+    "moment": "^2.16.0",
+    "postcss": "^5.1.2",
+    "postcss-circle": "^1.0.0",
+    "postcss-clearfix": "^1.0.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-position": "^0.5.0",
+    "postcss-px2rem": "^0.3.0",
+    "postcss-size": "^1.0.0",
+    "postcss-triangle": "^1.0.1",
+    "request": "^2.78.0",
+    "rimraf": "^2.5.4",
+    "svgo": "^0.7.0",
+    "uglify-js": "^2.7.3"
+  }
+}
